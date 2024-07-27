@@ -113,7 +113,51 @@ body{font-family:Arial,sans-serif;margin:0;padding:0;background-color:#222;color
     });
 
     $("#announcementheader_main").css("display", "block");
-</script> </header> <main> <h1>Akatsuki's Guestbook</h1> <h2>Rules</h2> <ol> <li><strong>YOUR MESSAGE WILL NEED TO BE APPROVED BY A MODERATOR MANUALLY.</strong></li> <li>No harassement of any kind. Treat everyone with kindness and avoid arguments, drama, or flaming. Do not make offensive, derogatory, or similar memes towards anyone, including fictional figures.</li> <li>Do NOT post any NSFW/LEWD content under ANY circumstance.</li> <li>No talking about tragic historical events in a joking manner, only constructive discussion and understanding is allowed. (i.e. don't joke about 9/11, the holocaust etc.)</li> <li>No self promotion. Sending your own content that's related to the chat is allowed, although this rule is enforced strictly and might not always be allowed.</li> <li>Jokes about NSFW/LEWD content, terrorist organizations, Nazism, fascism, 9/11, homeless, offensive or towards any group that's vulnerable are not treated as jokes on this guestbook.</li> </ol> <br> <p>If you agree to the above rules, you can send a message on the guestbook.</p> <p> <a href="https://akatsuki2555.rf.gd/Guestbook/Guestbook.php"> <button>Enter Guestbook</button> </a> </p> </main> <footer data-astro-cid-k2f5zb5c>  <p data-astro-cid-k2f5zb5c>Copyright ©️ 2024 アカツキ</p> <div id="footerLinks" data-astro-cid-k2f5zb5c> <p data-astro-cid-k2f5zb5c><a href="mailto:akatsuki2555@proton.me" data-astro-cid-k2f5zb5c>E-mail me</a> <a href="/gpg" data-astro-cid-k2f5zb5c>(GPG Key)</a></p> <p data-astro-cid-k2f5zb5c><a href="/suggestion" data-astro-cid-k2f5zb5c>Suggestions</a></p> <p data-astro-cid-k2f5zb5c><a href="/discord" data-astro-cid-k2f5zb5c>Discord</a></p> <p id="footerPageVisits" data-astro-cid-k2f5zb5c>loading views...</p> <p data-astro-cid-k2f5zb5c><a href="/sitemap" data-astro-cid-k2f5zb5c>329 pages here</a></p> <p data-astro-cid-k2f5zb5c>Last updated: 2024/07/26 17:42</p> </div> <p> <input type="checkbox" name="enablecursor" id="enablecursor"> <label for="enablecursor">Enable Cursor Effects <i>(thank you <a href="https://bee.nekoweb.org">bee</a> for allowing me to steal this)</i></label> </p> <script type="text/javascript">
+</script> </header> <main> <h1>Akatsuki's Guestbook</h1> <h2>Rules</h2> <ol> <li><strong>YOUR MESSAGE WILL NEED TO BE APPROVED BY A MODERATOR MANUALLY.</strong></li> <li>No harassement of any kind. Treat everyone with kindness and avoid arguments, drama, or flaming. Do not make offensive, derogatory, or similar memes towards anyone, including fictional figures.</li> <li>Do NOT post any NSFW/LEWD content under ANY circumstance.</li> <li>No talking about tragic historical events in a joking manner, only constructive discussion and understanding is allowed. (i.e. don't joke about 9/11, the holocaust etc.)</li> <li>No self promotion. Sending your own content that's related to the chat is allowed, although this rule is enforced strictly and might not always be allowed.</li> <li>Jokes about NSFW/LEWD content, terrorist organizations, Nazism, fascism, 9/11, homeless, offensive or towards any group that's vulnerable are not treated as jokes on this guestbook.</li> </ol> <form id="guestbook_submit" style="border: 2px solid white; padding: 2px;"> <label for="title">Title:</label> <br> <input type="text" id="title" name="title" required> <br> <br> <label for="content">Content:</label> <br> <textarea id="content" name="content" required></textarea> <br> <br> <button type="submit" id="btn_submit">Submit</button> <p id="error" style="display: none;"></p> </form> <p id="loading">Loading guestbook...</p> <div id="guestbook"></div> <script type="text/javascript">
+
+        $.get("https://akatsuki2555-api.vercel.app/api/webguestbook/get", function(data) {
+          data = data.reverse();
+          $("#loading").hide();
+          data.forEach(function(entry) {
+            $("#guestbook").append(
+              `<div style="border: 1px solid white; margin: 2px;">
+                <p style="padding: 4px; margin: 0;"><strong>${entry.title} says:</strong></p>
+                <p style="padding: 4px; margin: 0; margin-left: 2em;">${entry.content}</p>
+              </div>`
+            );
+          });
+        });
+
+        $("#guestbook_submit").submit(function(event) {
+          event.preventDefault();
+          $("#btn_submit").prop("disabled", true);
+          var title = $("#title").val();
+          var content = $("#content").val();
+          $.ajax({
+            type: "POST",
+            url: "https://akatsuki2555-api.vercel.app/api/webguestbook/add",
+            data: JSON.stringify({ title: title, content: content }),
+            contentType: "application/json",
+            success: function(data) {
+              $("#guestbook").prepend(
+                `<div style="border: 1px solid white; margin: 2px;">
+                  <p style="padding: 4px; margin: 0;"><strong>${title} says:</strong></p>
+                  <p style="padding: 4px; margin: 0; margin-left: 2em;">${content}</p>
+                </div>`
+              );
+              $("#title").val("");
+              $("#content").val("");
+              $("#btn_submit").prop("disabled", false);
+            },
+            error: function(data) {
+              $("#error").text("An error occurred while submitting your message: " + data.responseText);
+              $("#error").show();
+              $("#btn_submit").prop("disabled", false);
+            }
+          });
+        });
+
+      </script> </main> <footer data-astro-cid-k2f5zb5c>  <p data-astro-cid-k2f5zb5c>Copyright ©️ 2024 アカツキ</p> <div id="footerLinks" data-astro-cid-k2f5zb5c> <p data-astro-cid-k2f5zb5c><a href="mailto:akatsuki2555@proton.me" data-astro-cid-k2f5zb5c>E-mail me</a> <a href="/gpg" data-astro-cid-k2f5zb5c>(GPG Key)</a></p> <p data-astro-cid-k2f5zb5c><a href="/suggestion" data-astro-cid-k2f5zb5c>Suggestions</a></p> <p data-astro-cid-k2f5zb5c><a href="/discord" data-astro-cid-k2f5zb5c>Discord</a></p> <p id="footerPageVisits" data-astro-cid-k2f5zb5c>loading views...</p> <p data-astro-cid-k2f5zb5c><a href="/sitemap" data-astro-cid-k2f5zb5c>329 pages here</a></p> <p data-astro-cid-k2f5zb5c>Last updated: 2024/07/27 21:5</p> </div> <p> <input type="checkbox" name="enablecursor" id="enablecursor"> <label for="enablecursor">Enable Cursor Effects <i>(thank you <a href="https://bee.nekoweb.org">bee</a> for allowing me to steal this)</i></label> </p> <script type="text/javascript">
                 $.get("https://nekoweb.org/api/site/info/akatsuki", function(data){
                     $("#footerPageVisits").text(
                         data["views"] + " views",
