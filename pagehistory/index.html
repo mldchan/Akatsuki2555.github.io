@@ -1,0 +1,299 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><title> | Akatsuki's website</title><meta name="description" content=""><meta name="author" content="アカツキ"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="content-language" content="en"><meta property="og:title" content=" | Akatsuki's website"><meta property="og:description" content=""><meta property="og:type" content="website"><meta property="og:url" content="https://akatsuki.nekoweb.org"><meta property="og:site_name" content="Akatsuki's website"><meta property="og:locale" content="en_US"><meta property="og:locale:alternate" content="ja_JP"><meta name="twitter:title" content=" | Akatsuki's website"><meta name="twitter:description" content=""><!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4021488147419187"
+     crossorigin="anonymous"></script>
+<meta name="google-adsense-account" content="ca-pub-4021488147419187"> --><script src="/scripts/cursoreffects.js"></script> <script src="/scripts/jquery.js"></script> <script src="/scripts/pako.js"></script> <script src="/scripts/purify.js"></script><script defer>
+    window.addEventListener("load", (event) => {
+        if (localStorage.getItem("cursorSetting") == "disable") {
+            return;
+        }
+
+        cursoreffects.fairyDustCursor({
+            colors: ["#5BCEFA", "#F5A9B8", "#FFFFFF"],
+        });
+        cursoreffects.rainbowCursor({
+            colors: ["lightblue", "pink", "white", "pink", "lightblue"],
+            length: 50,
+            size: 5
+        });
+    });
+
+    window.onload = function setUpEnableCursor() {
+        // Footer toggle cursor switch    
+        /** @type {HTMLInputElement} */
+        let enableCursor = document.getElementById("enablecursor");
+        enableCursor.checked = localStorage.getItem("cursorSetting") != "disable";
+        enableCursor.onchange = function toggleCursor() {
+            if (enableCursor.checked) {
+                if (localStorage.getItem("cursorSetting") != null) {
+                    localStorage.removeItem("cursorSetting");
+                }
+            }
+            else {
+                localStorage.setItem("cursorSetting", "disable");
+            }
+
+            location.reload();
+        }
+    }
+</script><style>#footerLinks[data-astro-cid-k2f5zb5c]{display:flex;flex-direction:row}#footerLinks[data-astro-cid-k2f5zb5c] p[data-astro-cid-k2f5zb5c]{margin-right:1em}
+*{margin:0;padding:0;box-sizing:border-box;font-family:MS UI Gothic,nec_apc3,Verdana,sans-serif;image-rendering:-moz-crisp-edges;image-rendering:-webkit-crisp-edges;image-rendering:pixelated;image-rendering:crisp-edges}:root{color-scheme:dark}ul{margin-bottom:20px;list-style-type:disc}li{color:#eee;margin-left:1.2em;margin-top:4px;margin-bottom:4px}header{max-width:800px;margin:0 auto;background-color:#2c2c2c;color:#fff}header nav{padding:5px 15px}nav ul{list-style-type:none;margin:0;padding:0}nav li{display:inline;margin-right:10px;margin-left:0}nav a{color:#fff;text-decoration:none;font-weight:700}main{max-width:800px;margin:0 auto}h1{background:linear-gradient(to bottom,#2c2c2c,#222)}h2,h3,h4,h5,h6{margin:0 4px}p{color:#eee;margin:0 6px 20px}img{max-width:100%}details>summary{color:#f991df;cursor:pointer;font-size:larger;font-weight:700}a{color:#f991df}a:hover{color:#8482f7}a:active{color:#4c4af1}footer{max-width:800px;margin:0 auto;background:linear-gradient(to bottom,#222,#2c2c2c 30% 70%,#222)}footer p{margin:0}button{background-color:silver;color:#000;padding:4px 20px;border:2px solid gray;border-top:3px solid lightgray}button:hover{border:3px solid rgb(53,53,53);border-top:3px solid rgb(97,97,97)}button:active{border-bottom:3px solid gray;border-right:3px solid gray;border-left:4px solid gray;border-top:4px solid gray}button:disabled{opacity:.5;cursor:not-allowed}code{color:#e77cf5;font-family:monospace}#headerImage[data-astro-cid-hpnw4vwy]{height:150px;background-image:url(/misc/menherasuma/1.webp);background-position:center;background-size:cover}#headerImage[data-astro-cid-hpnw4vwy]>div[data-astro-cid-hpnw4vwy]{height:150px;background-image:linear-gradient(to bottom,rgb(44,44,44),transparent 40%,rgb(44,44,44) 100%)}#headerImage[data-astro-cid-hpnw4vwy] h2[data-astro-cid-hpnw4vwy]{font-size:2em;position:relative;left:25px;top:25px;text-shadow:2px 2px 2px #000}#headerImage[data-astro-cid-hpnw4vwy] p[data-astro-cid-hpnw4vwy]{position:relative;left:25px;top:20px;text-shadow:2px 2px 2px #000}.prideflags[data-astro-cid-hpnw4vwy]{display:flex;justify-content:center;align-items:center}.prideflag[data-astro-cid-hpnw4vwy]{height:15px;width:100vw}
+._blog_jdw1u_1{height:100px;border:4px solid gray;border-bottom:4px solid rgb(61,61,61);border-right:4px solid rgb(61,61,61);padding:4px;position:relative;margin-bottom:4px}._blog_jdw1u_1 p{margin:0}._blog_jdw1u_1 a{top:4px;right:4px;position:absolute}
+._project_1fgep_1{background-color:#333;color:#fff;height:100px;background-position:center;background-size:cover;border:4px solid gray;border-bottom:4px solid rgb(61,61,61);border-right:4px solid rgb(61,61,61);margin:4px}._project_1fgep_1 h3{height:30px;font-size:medium;text-shadow:2px 2px 2px #000;background-color:#333a;padding:6px 0 6px 10px}._project_1fgep_1 p{margin:0;padding-left:20px;color:#fff;text-shadow:2px 2px 2px #000;background-color:#333a;height:70px}._error_1fgep_65{background-color:#5e0303;padding:10px;border-radius:10px;margin:20px 0}._project_1fgep_1 a{color:#fff;text-decoration:none}._projectContainer_1fgep_91{display:grid;grid-template-columns:1fr 1fr}@media screen and (max-width: 650px){._projectContainer_1fgep_91{grid-template-columns:1fr}}
+.now[data-astro-cid-lfnvi74r]{border:2px solid black}
+._tabs_1a18g_1{display:flex;background-color:#252525}._tab_1a18g_1{padding:2px 8px;border:2px solid #252525;border-bottom:1px solid #252525;color:inherit;text-decoration:none}._selectedTab_1a18g_27{background-image:linear-gradient(to bottom,#414141,#292929);border:2px solid black;border-bottom:1px solid black}
+.warning[data-astro-cid-rw6lrzm3]{background-color:#4b4b00;padding:.5em;margin:.5em;border:2px solid gray;border-top:2px solid lightgray;border-left:2px solid lightgray}
+.error[data-astro-cid-6crupwxt]{background-color:red;color:#fff;padding:10px;margin:10px 0}.warning[data-astro-cid-6crupwxt]{background-color:#fc0;color:#000;padding:10px;margin:10px 0}
+body{font-family:Arial,sans-serif;margin:0;padding:0;background-color:#222;color:#fff}main[data-astro-cid-in2zfyjn]{max-width:800px;margin:20px auto;background-color:#333;padding:20px;border-radius:8px;box-shadow:0 0 10px #0000001a}h1[data-astro-cid-in2zfyjn]{color:#fff}form[data-astro-cid-in2zfyjn]{margin-bottom:20px}label[data-astro-cid-in2zfyjn]{display:block;margin-bottom:5px}input[data-astro-cid-in2zfyjn][type=number],input[data-astro-cid-in2zfyjn][type=checkbox]{margin-bottom:10px}button[data-astro-cid-in2zfyjn]{background-color:#007bff;color:#fff;border:none;padding:10px 20px;cursor:pointer;border-radius:4px}button[data-astro-cid-in2zfyjn]:hover{background-color:#0056b3}#generatedOutput[data-astro-cid-in2zfyjn]{background-color:#444;padding:10px;border-radius:4px}
+._social_6kg0o_1{display:flex;justify-content:space-between;align-items:center;background-color:#333;color:#fff;height:100px;background-position:center;background-size:cover;border:4px solid gray;border-bottom:4px solid rgb(61,61,61);border-right:4px solid rgb(61,61,61);margin:4px}._social_6kg0o_1 h3{height:100px;width:100%;font-size:large;text-align:center;text-shadow:1px 1px 1px #000;background-color:#333a;display:flex;align-items:center;justify-content:center}._error_6kg0o_57{background-color:#5e0303;padding:10px;border-radius:10px;margin:20px 0}._social_6kg0o_1 a{color:#fff;text-decoration:none}._socialContainer_6kg0o_83{display:grid;grid-template-columns:1fr}
+</style></head> <body> <header data-astro-cid-hpnw4vwy>  <div id="headerprideflag" style="display: none;" data-astro-cid-hpnw4vwy> <div class="prideflags" data-astro-cid-hpnw4vwy> <div class="prideflag" style="background-color: red;" data-astro-cid-hpnw4vwy></div> <div class="prideflag" style="background-color: orange;" data-astro-cid-hpnw4vwy></div> <div class="prideflag" style="background-color: yellow;" data-astro-cid-hpnw4vwy></div> <div class="prideflag" style="background-color: green;" data-astro-cid-hpnw4vwy></div> <div class="prideflag" style="background-color: blue;" data-astro-cid-hpnw4vwy></div> <div class="prideflag" style="background-color: purple;" data-astro-cid-hpnw4vwy></div> </div> <div class="prideflags" data-astro-cid-hpnw4vwy> <div class="prideflag" style="background-color: cyan;" data-astro-cid-hpnw4vwy></div> <div class="prideflag" style="background-color: pink;" data-astro-cid-hpnw4vwy></div> <div class="prideflag" style="background-color: white; display: flex; justify-content: center;" data-astro-cid-hpnw4vwy> <span style="color: black; font-size: 10px;" data-astro-cid-hpnw4vwy>HAPPY PRIDE MONTH!</span> </div> <div class="prideflag" style="background-color: pink;" data-astro-cid-hpnw4vwy></div> <div class="prideflag" style="background-color: cyan;" data-astro-cid-hpnw4vwy></div> </div> <div class="prideflags" data-astro-cid-hpnw4vwy> <div class="prideflag" style="background-color: #FF2890;" data-astro-cid-hpnw4vwy></div> <div class="prideflag" style="background-color: #FFD908;" data-astro-cid-hpnw4vwy></div> <div class="prideflag" style="background-color: #28B3FF;" data-astro-cid-hpnw4vwy></div> </div> </div> <script type="text/javascript">
+    $(document).ready(function() {
+      const currentDate = new Date();
+      const currentMonth = currentDate.getMonth();
+
+      if (currentMonth === 5) { // June is represented as 5 in JavaScript Date object
+        $("#headerprideflag").show();
+      }
+    });
+  </script> <div id="headerImage" data-astro-cid-hpnw4vwy> <div data-astro-cid-hpnw4vwy> <h2 data-astro-cid-hpnw4vwy>Akatsuki's website!</h2> <p data-astro-cid-hpnw4vwy>Welcome to Akatsuki's website!</p> </div> </div> <script>
+    const imageLinks = [
+      '/project/asphaltroads/1.webp',
+      '/project/astolfoforge/armor.webp',
+      '/project/astolfoforge/astolfoflower.webp',
+      '/project/astolfoforge/biome.webp',
+      '/project/astolfoforge/casual.webp',
+      '/project/astolfoforge/crowd.webp',
+      '/project/astolfoforge/schoolgirl.webp',
+      '/project/astolforesourcepack/ending.webp',
+      '/project/astolforesourcepack/loading.webp',
+      '/project/astolforesourcepack/menu.webp',
+      '/project/astolfos/desktop.webp',
+      '/project/astolfos/neofetch.webp',
+      '/project/astolfos/settings.webp',
+      '/project/highwaycarbreakdowns/1.webp',
+      '/project/highwaycarbreakdowns/2.webp',
+      '/project/highwaycarbreakdowns/3.webp',
+      '/project/highwaycarbreakdowns/4.webp',
+      '/project/highwaycarbreakdowns/5.webp',
+      '/project/msctweaks/1.webp',
+      '/project/regplatechanger/1.webp',
+      '/project/pridemod/1.webp',
+      '/project/pridemod/Header.webp'
+    ];
+    const imageLink = imageLinks[Math.floor(Math.random() * imageLinks.length)];
+    $("#headerImage").css("background-image", `url(${imageLink})`);
+  </script> <nav data-astro-cid-hpnw4vwy> <ul data-astro-cid-hpnw4vwy> <li data-astro-cid-hpnw4vwy><a href="/" data-astro-cid-hpnw4vwy>Home</a></li> <li data-astro-cid-hpnw4vwy><a href="/guestbook" data-astro-cid-hpnw4vwy>Guestbook</a></li> <li data-astro-cid-hpnw4vwy><a href="/projects" data-astro-cid-hpnw4vwy>Projects</a></li> <li data-astro-cid-hpnw4vwy><a href="/socials" data-astro-cid-hpnw4vwy>Socials</a></li> <li data-astro-cid-hpnw4vwy><a href="/misc" data-astro-cid-hpnw4vwy>Miscellaneous</a></li> <li data-astro-cid-hpnw4vwy><a href="/discord" data-astro-cid-hpnw4vwy>Discord</a></li> <li data-astro-cid-hpnw4vwy><a href="/videos" data-astro-cid-hpnw4vwy>Videos</a></li> <li data-astro-cid-hpnw4vwy><a href="/blog" data-astro-cid-hpnw4vwy>Blog</a></li> </ul> </nav> <div id="announcementheader_main" style="display:none; background-image: linear-gradient(to bottom, rgb(136, 0, 0) 20%, rgb(78, 0, 0) 50%, rgb(150, 1, 1) 100%); padding: 4px; border: 1px solid red;"> <p> <span id="announcementheader_prev">&lt;</span> <span id="announcementheader_curr">1 of 2</span> <span id="announcementheader_next">&gt;</span> </p> <div id="announcementheader_content"></div> </div> <script>
+    const announcements = [
+        "<p><a href='https://ko-fi.com/akatsuki2555'><strong>Support me on Ko-fi!</strong>  I'm now on Ko-fi, a platform where you can support me by buying me a coffee!</a></p>",
+        "<p><a href='https://akatsuki.nekoweb.org/project/akabot'><strong>My own Discord bot, Akabot is now verified!</strong>  It now has a symbolic checkmark next to it, showing it's a legitimate Discord bot.</a></p>"
+    ]
+
+    function updateAnnouncement(index) {
+        $("#announcementheader_content").html(announcements[index]);
+    }
+
+    let currentAnnouncement = 0;
+
+    updateAnnouncement(currentAnnouncement);
+
+    $("#announcementheader_prev").click(() => {
+        currentAnnouncement--;
+        if (currentAnnouncement < 0) {
+            currentAnnouncement = announcements.length - 1;
+        }
+        updateAnnouncement(currentAnnouncement);
+        $("#announcementheader_curr").html(`${currentAnnouncement + 1} of ${announcements.length}`);
+    });
+
+    $("#announcementheader_next").click(() => {
+        currentAnnouncement++;
+        if (currentAnnouncement >= announcements.length) {
+            currentAnnouncement = 0;
+        }
+        updateAnnouncement(currentAnnouncement);
+        $("#announcementheader_curr").html(`${currentAnnouncement + 1} of ${announcements.length}`);
+    });
+
+    $("#announcementheader_main").css("display", "block");
+</script> </header> <main> <h1>Page Modification History</h1> <p><a href="/history">Also take a look at the developer's history.</a></p> <p><span style="color: orange;">ecd05e</span> <span>Update history on build
+</span></p><p><span style="color: orange;">ed339c</span> <span>Add page history
+</span></p><p><span style="color: orange;">e50095</span> <span>Removed NEW! from guestbook
+</span></p><p><span style="color: orange;">b52581</span> <span>Added ban lookup page for Discord, moved scripts to my host
+</span></p><p><span style="color: orange;">8685f1</span> <span>Use later packages
+</span></p><p><span style="color: orange;">961e18</span> <span>Add missing cname record
+</span></p><p><span style="color: orange;">b09b91</span> <span>Hide webrings on non-Nekoweb builds
+</span></p><p><span style="color: orange;">edb0d7</span> <span>Added .env to gitignore
+</span></p><p><span style="color: orange;">c981e3</span> <span>Make some parts unavailable for Nekoweb
+</span></p><p><span style="color: orange;">e16064</span> <span>Merge branch &#x27;main&#x27; into staging
+</span></p><p><span style="color: orange;">058b21</span> <span>Update 2024/07/27
+</span></p><p><span style="color: orange;">1f51e8</span> <span>Add guestbook from API
+</span></p><p><span style="color: orange;">c45e97</span> <span>Small updates to Akabot page
+</span></p><p><span style="color: orange;">9cbe60</span> <span>Remove unneeded downloading
+</span></p><p><span style="color: orange;">9f1bc6</span> <span>Remove testing stuff, prepare for prod
+</span></p><p><span style="color: orange;">a25244</span> <span>Testing things
+</span></p><p><span style="color: orange;">cd8734</span> <span>First test of build script for Github pages
+</span></p><p><span style="color: orange;">e151c8</span> <span>Update on 2024/07/26 (#11)
+</span></p><p><span style="color: orange;">98a8d9</span> <span>Update nekoweb index
+</span></p><p><span style="color: orange;">1dc8fa</span> <span>Added small projects page
+</span></p><p><span style="color: orange;">6cf3d6</span> <span>Moved MSC mods to another page
+</span></p><p><span style="color: orange;">9c8b6f</span> <span>Updated formatting settings
+</span></p><p><span style="color: orange;">17226d</span> <span>Updated history
+</span></p><p><span style="color: orange;">bcd326</span> <span>redesign index page
+</span></p><p><span style="color: orange;">919185</span> <span>Updated list of videos
+</span></p><p><span style="color: orange;">460b19</span> <span>Add header link for videos
+</span></p><p><span style="color: orange;">96dfd1</span> <span>Added a videos site
+</span></p><p><span style="color: orange;">2c1896</span> <span>Rebuild with new videos path format
+</span></p><p><span style="color: orange;">108b9c</span> <span>New format for publishing
+</span></p><p><span style="color: orange;">095f8b</span> <span>Added dynamic youtube list
+</span></p><p><span style="color: orange;">042153</span> <span>Test video list generator
+</span></p><p><span style="color: orange;">89062d</span> <span>Fix line breaks in BuildExtraSlim.sh
+</span></p><p><span style="color: orange;">1fd5b4</span> <span>Fix wiki link
+</span></p><p><span style="color: orange;">9ed252</span> <span>Add files that are meant to be private since this is a private repo
+</span></p><p><span style="color: orange;">21916c</span> <span>Remove broken files
+</span></p><p><span style="color: orange;">f73bb8</span> <span>Added setup script and requirements
+</span></p><p><span style="color: orange;">ca0547</span> <span>Added auto uploader
+</span></p><p><span style="color: orange;">8a6b8e</span> <span>Unsaved file
+</span></p><p><span style="color: orange;">68b185</span> <span>TikTok in socials, removed 4 mods, update description for 2 mods, remove Velkonya and VelkySMP viewer, clean up unused files
+</span></p><p><span style="color: orange;">a06b8e</span> <span>Update scripts for Unix systems
+</span></p><p><span style="color: orange;">5dced7</span> <span>Merge pull request #8 from Akatsuki2555/staging
+
+Updates for 2024/07/09
+Moved Akabot Documentation to GitHub
+Added Discord to headers
+Added Ko-fi to social networks</span></p><p><span style="color: orange;">1ce4d2</span> <span>Add Discord to headers
+</span></p><p><span style="color: orange;">37001a</span> <span>Add Ko-fi to socials
+</span></p><p><span style="color: orange;">81e6bf</span> <span>Move docs to GitHub
+</span></p><p><span style="color: orange;">bec7dd</span> <span>Merge branch &#x27;main&#x27; into staging, prepare for more updates
+</span></p><p><span style="color: orange;">aa26a0</span> <span>Updates for 2024/07/06
+
+- Show header pride flag only in Pride Month
+- Removed Codeberg and X from socials
+- Removed unused pages
+- Discord server no longer requires waiting
+- Discord server rules page is now separate
+- Added news.json
+- Small rebuild of the home page
+- Add Pride Mod
+- Remove OldCarSounds, Old Hayosiko, Old Ferndale, Old Highway Cars, Old World and Old Kekmet in favor of GoodOldMSC</span></p><p><span style="color: orange;">afcf68</span> <span>Show header pride flag only during pride month
+</span></p><p><span style="color: orange;">3ad386</span> <span>Remove Codeberg and X since they&#x27;re dead
+</span></p><p><span style="color: orange;">4e0092</span> <span>Removed unused banned words, fix wrong type of apostrophe in rules
+</span></p><p><span style="color: orange;">227af5</span> <span>Removed style
+</span></p><p><span style="color: orange;">b154ed</span> <span>Edited Discord text to reflect updates
+</span></p><p><span style="color: orange;">7740ec</span> <span>Edited Discord site and rules
+</span></p><p><span style="color: orange;">be43dd</span> <span>Replace all old related projects with GoodOldMSC
+</span></p><p><span style="color: orange;">6b95b8</span> <span>Add news
+</span></p><p><span style="color: orange;">4c8982</span> <span>Clean up buttons and webrings to a fold list
+</span></p><p><span style="color: orange;">3be490</span> <span>Slight reconstruction of home page
+</span></p><p><span style="color: orange;">2ebf8b</span> <span>Added links on index page
+</span></p><p><span style="color: orange;">d3874c</span> <span>Add pride mod to home page
+</span></p><p><span style="color: orange;">615aca</span> <span>Create LICENSE</span></p><p><span style="color: orange;">0b14f8</span> <span>Update for 2024/06/29
+</span></p><p><span style="color: orange;">562fbe</span> <span>Create devcontainer.json</span></p><p><span style="color: orange;">55037d</span> <span>Merge remote-tracking branch &#x27;github/main&#x27;
+</span></p><p><span style="color: orange;">e48b50</span> <span>Merge pull request #1 from Akatsuki2555/dependabot/npm_and_yarn/npm_and_yarn-5134b82be1
+
+Bump braces from 3.0.2 to 3.0.3 in the npm_and_yarn group across 1 directory</span></p><p><span style="color: orange;">35a86f</span> <span>Bump braces in the npm_and_yarn group across 1 directory
+
+Bumps the npm_and_yarn group with 1 update in the / directory: [braces](https://github.com/micromatch/braces).
+
+
+Updates `braces` from 3.0.2 to 3.0.3
+- [Changelog](https://github.com/micromatch/braces/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/micromatch/braces/compare/3.0.2...3.0.3)
+
+---
+updated-dependencies:
+- dependency-name: braces
+  dependency-type: indirect
+  dependency-group: npm_and_yarn
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt;</span></p><p><span style="color: orange;">79a2e9</span> <span>Create SECURITY.md</span></p><p><span style="color: orange;">067ec3</span> <span>fixed site news
+</span></p><p><span style="color: orange;">859571</span> <span>Remove gif for slim build
+</span></p><p><span style="color: orange;">1c2a7f</span> <span>Fix up guestbook, update link
+</span></p><p><span style="color: orange;">9c8838</span> <span>test guestbook
+</span></p><p><span style="color: orange;">9f302d</span> <span>Fix theming, discord rules fixed
+</span></p><p><span style="color: orange;">0a3ec7</span> <span>Move nekoweb projects to main projects
+</span></p><p><span style="color: orange;">c97d7b</span> <span>Change built to last updated
+</span></p><p><span style="color: orange;">81e6f0</span> <span>Added bucket webring and fix build script
+</span></p><p><span style="color: orange;">81747d</span> <span>Updated the pride month theme
+</span></p><p><span style="color: orange;">606161</span> <span>Added Pride Month Mod
+</span></p><p><span style="color: orange;">cc4e3d</span> <span>Fix typo in Akabot description
+</span></p><p><span style="color: orange;">e06feb</span> <span>Pride flags above header
+</span></p><p><span style="color: orange;">05bd0a</span> <span>Remove some forgotten code in header
+</span></p><p><span style="color: orange;">7cf566</span> <span>Remove tags, update Discord rules
+</span></p><p><span style="color: orange;">db86d3</span> <span>Trying to fix a bug with links not coloring without !important
+</span></p><p><span style="color: orange;">a4111a</span> <span>Added documentation to Akabot
+</span></p><p><span style="color: orange;">69d855</span> <span>Added no AI webring
+</span></p><p><span style="color: orange;">3bf093</span> <span>Added big announcement
+</span></p><p><span style="color: orange;">d594da</span> <span>Updated nekosearch text
+</span></p><p><span style="color: orange;">64fd8b</span> <span>Powershell scripts are windows, shell for Linux
+</span></p><p><span style="color: orange;">483bbf</span> <span>Added a card on the index page
+</span></p><p><span style="color: orange;">403e25</span> <span>Projects style update
+</span></p><p><span style="color: orange;">ea7ffb</span> <span>New socials pictures, add instagram and X
+</span></p><p><span style="color: orange;">a81832</span> <span>Add shell scripts
+</span></p><p><span style="color: orange;">8fe63f</span> <span>Shebangs, fix bugs in scripts
+</span></p><p><span style="color: orange;">42345f</span> <span>pnpm, powershell script fix for Linux
+</span></p><p><span style="color: orange;">3d2088</span> <span>Fix Discord link in socials
+</span></p><p><span style="color: orange;">f25490</span> <span>Add codeberg
+</span></p><p><span style="color: orange;">7defad</span> <span>WorkingApartment Customizer was replaced
+</span></p><p><span style="color: orange;">518d59</span> <span>Add images to header
+</span></p><p><span style="color: orange;">4acb46</span> <span>Add infinite nitrous
+</span></p><p><span style="color: orange;">30e37e</span> <span>Add WorkingApartment customizer
+</span></p><p><span style="color: orange;">d63eb9</span> <span>Nekoignore file :3
+</span></p><p><span style="color: orange;">c6e096</span> <span>Remove admin page
+</span></p><p><span style="color: orange;">5a52b1</span> <span>Attempt 1 at &quot;dynamic&quot; page
+</span></p><p><span style="color: orange;">102811</span> <span>Speak from my perspective instead of someone else&#x27;s
+</span></p><p><span style="color: orange;">e731df</span> <span>Small update :3
+</span></p><p><span style="color: orange;">c11954</span> <span>Improve slim build scripts
+</span></p><p><span style="color: orange;">2c3d47</span> <span>Extra slim build script
+</span></p><p><span style="color: orange;">abb265</span> <span>A few blog posts :3
+</span></p><p><span style="color: orange;">d752db</span> <span>Akabot website update
+</span></p><p><span style="color: orange;">1a21de</span> <span>Small SEO optimization
+</span></p><p><span style="color: orange;">cd2f4e</span> <span>Speed up build scripts, use CDN
+</span></p><p><span style="color: orange;">54950f</span> <span>Improve Velkonya :3
+</span></p><p><span style="color: orange;">b762c0</span> <span>Fix bug
+</span></p><p><span style="color: orange;">8b2f7c</span> <span>Fix typo
+</span></p><p><span style="color: orange;">739fd2</span> <span>Update 2024/05/11
+</span></p><p><span style="color: orange;">096565</span> <span>Move nekoweb related things under Nekoweb Projects
+</span></p><p><span style="color: orange;">58b2f2</span> <span>Add old highway cars
+</span></p><p><span style="color: orange;">71ab6f</span> <span>Re-added Old World
+</span></p><p><span style="color: orange;">875ef4</span> <span>Better support for Mobile :3
+</span></p><p><span style="color: orange;">a1d847</span> <span>Remove some images from header, added some history
+</span></p><p><span style="color: orange;">d9a0fe</span> <span>Fix build the lazy way
+</span></p><p><span style="color: orange;">1c5675</span> <span>Add button, new blog post and random header images
+</span></p><p><span style="color: orange;">dd3cd3</span> <span>Merge branch &#x27;improvedSearch&#x27;
+</span></p><p><span style="color: orange;">3b54bd</span> <span>Add multiple conditions and more search filters
+</span></p><p><span style="color: orange;">3121d8</span> <span>Add sorting to search
+</span></p><p><span style="color: orange;">2b3622</span> <span>Add search options and a follow button
+</span></p><p><span style="color: orange;">079c2f</span> <span>Add to do list
+</span></p><p><span style="color: orange;">3be971</span> <span>Merge branch &#x27;testing&#x27;
+</span></p><p><span style="color: orange;">b15b91</span> <span>Move MSC mods under projects
+</span></p><p><span style="color: orange;">7d630c</span> <span>VelkySMP monitor
+</span></p><p><span style="color: orange;">ceb506</span> <span>Better socials
+</span></p><p><span style="color: orange;">cc002e</span> <span>Create file velkysmpmon.astro
+</span></p><p><span style="color: orange;">965c27</span> <span>Social page small update
+</span></p><p><span style="color: orange;">88379f</span> <span>Merge branch &#x27;main&#x27; into testing
+</span></p><p><span style="color: orange;">c36299</span> <span>Remove webdata.json from build
+</span></p><p><span style="color: orange;">1dc261</span> <span>fix unknown bug :3
+</span></p><p><span style="color: orange;">8596b2</span> <span>Fix the cursor effects, jQuery time :3
+</span></p><p><span style="color: orange;">df875c</span> <span>One delete line not needed
+</span></p><p><span style="color: orange;">35b95c</span> <span>Moved all code to is:inline to prevent buggy stuff
+</span></p><p><span style="color: orange;">05756e</span> <span>Update README.md
+</span></p><p><span style="color: orange;">7a27b2</span> <span>Fix cursor
+</span></p><p><span style="color: orange;">6b8f5b</span> <span>Fix build
+</span></p><p><span style="color: orange;">a4e17a</span> <span>Trans cursor attempt
+</span></p><p><span style="color: orange;">b446b9</span> <span>Move meshsave to under misc
+</span></p><p><span style="color: orange;">7d22a9</span> <span>Build script
+</span></p><p><span style="color: orange;">735d60</span> <span>Small fix to content width
+</span></p><p><span style="color: orange;">da7104</span> <span>Android friendliness, sitemap and 3 misc things :3
+</span></p><p><span style="color: orange;">39f804</span> <span>Added a blog post about update of server rules
+</span></p><p><span style="color: orange;">c6d7d7</span> <span>Blog post script small update
+</span></p><p><span style="color: orange;">3299e8</span> <span>Discord update
+</span></p><p><span style="color: orange;">ddc1ca</span> <span>History page improvements
+</span></p><p><span style="color: orange;">952597</span> <span>Blog improvements
+</span></p><p><span style="color: orange;">0c11d3</span> <span>Generic site update
+</span></p><p><span style="color: orange;">1d3a8b</span> <span>Water bills
+</span></p><p><span style="color: orange;">d712ab</span> <span>Velkonya
+</span></p><p><span style="color: orange;">92695d</span> <span>Blogs!
+</span></p><p><span style="color: orange;">b448c7</span> <span>Update links
+</span></p><p><span style="color: orange;">50edd2</span> <span>Retro look of website
+</span></p><p><span style="color: orange;">c192d7</span> <span>README.md
+</span></p><p><span style="color: orange;">68cf6b</span> <span>Initial source commit
+</span></p> </main> <footer data-astro-cid-k2f5zb5c>  <p data-astro-cid-k2f5zb5c>Copyright ©️ 2024 アカツキ</p> <div id="footerLinks" data-astro-cid-k2f5zb5c> <p data-astro-cid-k2f5zb5c><a href="mailto:akatsuki2555@proton.me" data-astro-cid-k2f5zb5c>E-mail me</a> <a href="/gpg" data-astro-cid-k2f5zb5c>(GPG Key)</a></p> <p data-astro-cid-k2f5zb5c><a href="/suggestion" data-astro-cid-k2f5zb5c>Suggestions</a></p> <p data-astro-cid-k2f5zb5c><a href="/discord" data-astro-cid-k2f5zb5c>Discord</a></p>  <p data-astro-cid-k2f5zb5c><a href="/sitemap" data-astro-cid-k2f5zb5c>331 pages here</a></p> <p data-astro-cid-k2f5zb5c>Last updated: 2024/07/31 19:53</p> </div> <p> <input type="checkbox" name="enablecursor" id="enablecursor"> <label for="enablecursor">Enable Cursor Effects <i>(thank you <a href="https://bee.nekoweb.org">bee</a> for allowing me to steal this)</i></label> </p>  </footer> </body></html>
